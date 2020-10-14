@@ -12,6 +12,7 @@ struct LandMarksApp: App {
     var body: some Scene {
         WindowGroup {
             LandmarkList()
+                .environmentObject(UserData())
         }
     }
 }
